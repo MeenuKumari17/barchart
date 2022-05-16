@@ -1,0 +1,162 @@
+.register{
+    
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgb(216, 209, 209);
+
+
+    .container{
+        display: flex;
+        
+        margin: 4vh;
+        height: 92vh;
+        width: 96vw;
+        background-color: rgb(231, 227, 227);
+        border-radius: 2vh;
+        position: absolute;
+
+
+        .left{
+            flex: 1;
+
+            align-items: center;
+            justify-content: center;
+            
+            
+
+
+            .imgContainer{
+
+                position: relative;
+                top: 15vh;
+                left: 10vh;
+               
+                
+
+
+                img{
+                    width: 80vh;
+                    height: 35vh;
+                    transform: rotate(5deg);
+                    border-radius: 4%;
+                    // box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+                }
+            }
+
+
+
+            .text{
+                text-align: center;
+
+
+                h1{
+                    position: relative;
+                top: 18vh;
+                }
+
+                p{
+                    position: relative;
+                    top: -1vh;
+                    padding: 20vh;
+                }
+            }
+            
+
+
+
+        }
+
+
+        .right{
+            flex: 1;
+            background-color: white;
+            
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            
+            
+
+            .loginBox{
+                height: 80vh;
+                padding: 10vh;
+                background-color: white;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+
+                span{
+                    font-size: 12px;
+                    padding: 3px;
+                    color: red;
+                 display: none;
+
+
+                 
+
+                }
+
+                input:invalid ~ span {
+                    display: block;
+                }
+
+                
+
+
+                .loginInput{
+                    height: 5vh;
+                    border: 1px solid gray;
+                    font-size: 18px;
+                    padding-left: 20px;
+                
+                }
+
+
+                .check{
+                    
+                    display: flex;
+                    align-items: center;
+                    
+                    font-weight: bold;
+
+
+                    .checkbox{
+                        height: 4vh;
+                        width: 3vh;
+                        
+                    }
+                }
+
+
+                .loginButton{
+                    position: relative;
+                    top: 2vh;
+                    text-decoration: none;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 40vh;
+                    height: 5vh;
+                    background-color: rgb(47, 144, 209);
+                    border: none;
+                    border-radius: 2%;
+                    color: white;
+                    cursor: pointer;
+
+                    .loginButton:focus{
+                        outline: none;
+                        
+                    }
+                }
+                
+            }
+            
+            
+            
+            
+
+
+        }
+    }
+}
