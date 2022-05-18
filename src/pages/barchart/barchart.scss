@@ -2,9 +2,23 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 90vh;
+    height: 89vh;
+   
+}
 
-
+.btn {
+    background-color: rgb(236, 60, 60);
+    border: none;
+    height: 5vh;
+    width: 15vh;
+    position: relative;
+    left: 100vh;
+    border-radius: 10px;
+    color: aliceblue;
+    cursor: pointer;
     
 }
+
+
+
 
